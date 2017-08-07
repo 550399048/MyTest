@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/callBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送紧急回拨模式的广播"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/callBack"
+        android:id="@+id/unCallback"
+        android:text="取消紧急回拨"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试RecyclerView"
+        android:id="@+id/test_RecyclerView"
+        android:layout_below="@+id/unCallback"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试软键盘的弹出方式"
+        android:id="@+id/test_InputMethod"
+        android:layout_below="@+id/test_RecyclerView"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试软键盘的弹出方式"
+        android:id="@+id/test_aidl"
+        android:layout_below="@+id/test_InputMethod"/>
+
+    <custome.PasswordView
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/customView"
+        android:hint="请输入密码"
+        android:layout_below="@+id/test_aidl"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/title_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#1E2D38"
+            android:textSize="24dp"
+            android:text="主题" />
+
+
+        <LinearLayout
+            android:id="@+id/title_anim_layout"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:gravity="center">
+            <ProgressBar
+                android:id="@+id/title_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ap_area"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ap_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#b4b9bd"
+                android:textSize="16dp"
+                android:text="主题1" />
+
+            <TextView
+                android:id="@+id/ap_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#b4b9bd"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:text="主题2" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/list_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/wifi_required_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="请求文本" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="false"
+            android:drawSelectorOnTop="false"
+            android:paddingTop="0dip"
+            android:entries="@array/list_items"
+            android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <!--         <ImageView -->
+        <!--             android:id="@+id/divider" -->
+        <!--             android:layout_width="match_parent" -->
+        <!--             android:layout_height="wrap_content" -->
+        <!--             android:layout_marginTop="@dimen/setup_item_margin" -->
+        <!--             android:background="@*android:drawable/list_divider_holo_dark" /> -->
+    </LinearLayout>
+    <TextView
+        android:id="@+id/add_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="添加网络"
+        android:textColor="#1E2D38"
+        android:textSize="16dp" />
+
+    <!--     <LinearLayout -->
+    <!--         android:id="@+id/panel_footer_btn" -->
+    <!--         style="?android:attr/buttonStyle" -->
+    <!--         android:layout_width="fill_parent" -->
+    <!--         android:layout_height="wrap_content" -->
+    <!--         android:layout_alignParentBottom="true" -->
+    <!--         android:layout_marginBottom="50dp" -->
+    <!--         android:background="#00000000" -->
+    <!--         android:clickable="true" -->
+    <!--         android:visibility="gone" > -->
+
+    <!--         <TextView -->
+    <!--             android:id="@+id/skip_button" -->
+    <!--             style="@style/panel_footer_text_style" -->
+    <!--             android:layout_width="wrap_content" -->
+    <!--             android:layout_height="72dp" -->
+    <!--             android:drawableRight="@drawable/leui_panel_footer_next" -->
+    <!--             android:text="@string/skip_label" /> -->
+    <!--     </LinearLayout> -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弹出对话框"
+        android:id="@+id/showDialog"/>
+
+</ScrollView>

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/show_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:visibility="gone" >
+        <!--  Dummy to enable right-justification of checkbox -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+ />
+
+        <CheckBox android:id="@+id/hex_password"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="隐藏密码" />
+    </LinearLayout>
+
+</LinearLayout>
